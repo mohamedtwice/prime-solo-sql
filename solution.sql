@@ -20,7 +20,7 @@ LIMIT 3;
 SELECT username, account_balance
 FROM syntax_practice
 ORDER BY account_balance ASC
-LIMIT 3;
+LIMIT 3; 
 
 --Get all users with account balances that are more than $100.
 SELECT * FROM syntax_practice WHERE account_balance > '100'
@@ -29,4 +29,4 @@ SELECT * FROM syntax_practice WHERE account_balance > '100'
 INSERT INTO syntax_practice (username, city, transactions_completed, transactions_attempted, account_balance) VALUES ('mohamed', 'minneapolis', 5, 10, 1000000.00);
 
 --The bank is losing money in Miami and Phoenix and needs to unload low transaction customers: Delete users that reside in miami OR phoenix and have completed fewer than 5 transactions.
-DELETE FROM syntax_practice WHERE city = 'phoenix' OR city = 'miami' AND transactions_completed < 5
+DELETE FROM syntax_practice WHERE city = 'phoenix' OR city = 'miami' AND transactions_completed < 5;
